@@ -1,3 +1,16 @@
+  So this was a vanilla JS into React project, I got this vanilla project from Traversy Media repo, and turn into React with Hooks BUT with only useState and useEffect as simple as I could using the local storage as a sort of state manager (!?), so I was just practicing and trying to learn as much as I could, had a lot of errors and bugs, but those were actually learning points and it went very well! 
+ 
+  I learnt a lot.
+  Specially regarding the lifecycle of Hooks, man that is amazingly crazy ahahahaha.
+  I hope you can learn something from it.
+   Now I will watch Traversy Media's video where he does this using useReducer and useContext!
+  Then I will try and make my own version using that and THEN I will try and do a fullstack version!
+  Message me if you want to get in touch.
+  Thanks for reading.
+  Feel free to fork it.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
