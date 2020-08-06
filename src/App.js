@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
 
-function App() {
+import FinancesContainer from './components/finances-container/FinancesContainer'
+import FormNewTransaction from './components/form-new-transaction/FormNewTransaction'
+import CashList from './components/cash-list/CashList';
+import Container from '@material-ui/core/Container';
+import './App.css'
+
+const App = () => {
+  let [add, setAdd] = useState(false)
+  const [remove, setRemove] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container component="main" maxWidth="md" >
+      <h2>Expense Tracker</h2>
+      <Container component="section" maxWidth="xs">
+        <FinancesContainer add={add} remove={remove}/>
+        <h3>History</h3>
+        <CashList add={add} setAdd={val => setAdd(val)} remove={remove} setRemove={val => setRemove(val)}  />  
+        <FormNewTransaction setAdd={val => setAdd(val)}/>
+      </Container>
+    </Container>
+  )
 }
 
-export default App;
+export default App
